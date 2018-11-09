@@ -1,0 +1,38 @@
+header {
+    background-color: dodgerblue;
+    height: 100vh;
+}
+
+.headerText{
+    text-align: center;
+}
+
+.headerText p {
+    text-transform: uppercase;
+    color: white;
+    padding: 1rem;
+
+}
+
+.headerText p:nth-child(1){
+    font-size: 4rem;
+    font-weight: 900;
+    padding-top: 4rem;
+}
+
+.headerText p:nth-child(2){
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.headerText p:nth-child(3){
+    font-size: 1.5rem;
+}
+
+header button{
+    color: white;
+    border: 2px solid white;
+    background-color: rgba(0,0,0,0);
+    padding: 1rem;
+    margin-top: 4rem;
+}

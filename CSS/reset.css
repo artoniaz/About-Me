@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Roboto', arial, sans-serif;
+}
+
+.mainContainer{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
