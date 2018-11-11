@@ -1,0 +1,91 @@
+.technologySection {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.technologySection p {
+    padding: 1.5rem;
+}
+
+.technologySection .img {
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    width: 100%;
+}
+
+.technologySection .technologiesImg {
+    background-image: url("../Images/services1.png");
+}
+
+.technologySection .programmingImg {
+    background-image: url("../Images/technology-1283624_1920.jpg");
+}
+
+.technologySection .rwdImg {
+    background-image: url("../Images/services3.png");
+}
+
+.technologySection p:first-child {
+    font-weight: 900;
+}
+
+.technologySection div div:nth-child(2) p:nth-child(3) {
+    font-weight: 900;
+}
+
+.technologySection > div > div:nth-child(3) {
+    display: none;
+}
+
+@media all and (min-width: 360px) {
+    .technologySection .img {
+        height: 20rem;
+    }
+}
+
+@media all and (min-width: 533px) and (orientation: landscape) {
+    .technologySection .img {
+        display: block;
+        margin: 0 auto;
+        height: 25rem;
+        width: 80%;
+    }
+}
+
+@media all and (min-width: 1024px) and (orientation: portrait) {
+    .technologySection .img {
+        height: 30rem;
+    }
+}
+
+@media all and (min-width: 1024px) and (orientation: landscape) {
+    .technologySection > div > div:nth-child(3) {
+        display: inline-block;
+    }
+    .technologySection .boxes {
+        display: flex;
+        justify-content: space-between;
+    }
+    .technologySection .boxes .elementsContainer{
+        width: 30%;
+    }
+    .technologySection .boxes .elementsContainer .img{
+        width: 100%;
+        height: 12rem;
+    }
+    .technologySection p {
+        padding: 0.5rem;
+    }
+    .technologySection p:first-child {
+        padding: 1.5rem;
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+

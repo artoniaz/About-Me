@@ -1,0 +1,31 @@
+.mottoSection{
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.mottoSection .mottoImg{
+    background-image: url("../Images/nepalMotto.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.mottoImg div > *{
+    padding: 1.5rem;
+}
+
+.mottoImg div p:first-child{
+    text-transform: uppercase;
+}
+
+
+.mottoImg div p:last-child{
+    font-size: 1.5rem;
+}

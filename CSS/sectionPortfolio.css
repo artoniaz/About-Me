@@ -1,0 +1,73 @@
+.sectionBackground{
+    background-color: #000000;
+
+}
+
+.portfolioSection {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.portfolioSection .projectImg {
+    background-position: center;
+    background-size: cover;
+    height: 20rem;
+    width: 100%;
+}
+
+.portfolioSection .allenImg {
+    background-image: url("../Images/technology-1283624_1920.jpg");
+}
+
+.portfolioSection .furryImg {
+    background-image: url("../Images/technology-1283624_1920.jpg");
+}
+
+.portfolioSection .chairImg {
+    background-image: url("../Images/technology-1283624_1920.jpg");
+}
+
+.portfolioSection p {
+    padding: 1rem;
+}
+
+.portfolioSection > p:first-child{
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.portfolioSection .portfolioElements div:nth-child(2) p:first-child{
+    text-transform: uppercase;
+    font-weight: 700;
+    border-bottom: 1px solid #ffffff;
+}
+
+.portfolioSection .portfolioElements div:nth-child(2){
+    background-color: orangered;
+    padding-left: 5%;
+}
+
+.portfolioSection div:nth-child(3) div:nth-child(2){
+    background-color: royalblue;
+}
+
+@media all and (min-width: 1024px) and (orientation: landscape) {
+    .portfolioSection .portfolioElements{
+        display: flex;
+        justify-content: flex-start;
+        padding: 2rem;
+    }
+
+    .portfolioSection div:nth-child(3){
+        flex-direction: row-reverse;
+    }
+    .portfolioSection .projectImg {
+        height: 20rem;
+        width: 110%;
+    }
+    .portfolioSection .portfolioElements div:nth-child(2){
+        width: 105%;
+    }
+}
