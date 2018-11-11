@@ -1,0 +1,90 @@
+.hobbySection {
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.hobbySection > p:first-child {
+    font-size: 2.5rem;
+    padding: 2rem;
+    font-weight: 900;
+    background-color: white;
+}
+
+.hobbyImg {
+    background-position: center;
+    background-size: cover;
+    height: 70vw;
+    width: 100%;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+
+.hobbyImg:last-child{
+    border-bottom: none;
+}
+
+.hobbyImgs p {
+    line-height: 70vw;
+    color: #ffffff;
+    font-weight: 900;
+    background-color: black;
+    opacity: 0.7;
+    display: none;
+}
+
+
+
+.hobbyImgs .mountainImg {
+    background-image: url("../Images/mountainMotto.jpg");
+}
+
+.hobbyImgs .poolImg {
+    background-image: url("../Images/pool.jpg");
+}
+
+.hobbyImgs .allenImg {
+    background-image: url("../Images/manhattan.jpg");
+}
+
+.hobbyImgs .cohenImg {
+    background-image: url("../Images/leonard.jpg");
+}
+
+.hobbyImgs .travelImg {
+    background-image: url("../Images/travel.jpg");
+}
+
+.hobbyImgs .paintImg {
+    background-image: url("../Images/vienna.jpg");
+}
+
+@media all and (min-width: 533px) and (orientation: landscape) {
+    .hobbyImg {
+        height: 100vh;
+    }
+    .hobbyImgs p {
+        line-height: 100vh;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .hobbySection{
+        background-color: black;
+    }
+    .hobbyImgs{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .hobbyImg {
+        height: 50vh;
+        width: 50%;
+    }
+    .hobbyImgs p {
+        line-height: 50vh;
+    }
+    .hobbyImg:nth-child(5){
+        border-bottom: none;
+    }
+}
