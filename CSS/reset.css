@@ -1,21 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 10px;
     font-family: 'Roboto', arial, sans-serif;
 }
 
-.mainContainer{
+.mainContainer {
     width: 100%;
-    max-width: 1600px;
+    max-width: 2048px;
     margin: 0 auto;
 }
 
-.container{
+.container {
     max-width: 1024px;
     margin: 0 auto;
 }

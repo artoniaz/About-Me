@@ -1,0 +1,9 @@
+footer{
+    background-color: dodgerblue;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer p {
+    padding: 0.5rem;
+}
