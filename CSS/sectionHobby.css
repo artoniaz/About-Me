@@ -25,12 +25,16 @@
 }
 
 .hobbyImgs p {
+    display: none;
+}
+
+p.visible{
+    display: block;
     line-height: 70vw;
     color: #ffffff;
     font-weight: 900;
     background-color: black;
     opacity: 0.7;
-    display: none;
 }
 
 

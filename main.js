@@ -1,30 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    const headerButton = $(".headerText").find("button");
-    const hobbyImg = $(".hobbyImg");
-    let display = false;
-
-    hobbyImg.on("click", function () {
-        let hobbyDescription = this.querySelector("p");
-        if (display === false) {
-            hobbyDescription.style.display = "block";
-            display = true;
-        } else if (display === true){
-            hobbyDescription.style.display = "none";
-            display = false;
-        }
-    });
-
-    hobbyImg.on("mouseenter", function () {
-        let hobbyDescription = this.querySelector("p");
-        hobbyDescription.style.display = "block";
-    });
-
-    hobbyImg.on("mouseleave", function () {
-        let hobbyDescription = this.querySelector("p");
-        hobbyDescription.style.display = "none";
-    });
+    // const headerButton = $(".headerText").find("button");
+    let hobbyImg = document.querySelectorAll(".hobbyImg"); //każdy obrazek, na którym ma być event
 
 
+    for (let el of hobbyImg){ //na wszystkich obrazkach
+
+        el.addEventListener("click", function () {
+            let hobbyDescribtion = this.querySelector("p"); //zmienna przechowująca THIS paragraf
+            hobbyDescribtion.classList.toggle("visible"); //pokazuj i znikaj THIS paragraf
+        });
+        el.addEventListener("mouseleave", function () {
+            let hobbyDescribtion = this.querySelector("p"); //znikaj THIS paragraf
+            hobbyDescribtion.classList.remove("visible");
+        })
+        //event pozwala dowoli pokazywać i zamykać grafikę, o ile użytkownik jest myszką w obrębie obrazka
+    }
+    
 
 });
